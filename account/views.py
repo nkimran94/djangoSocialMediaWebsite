@@ -41,11 +41,11 @@ def register(request):
             #save the user object
             new_user.save()
             #create the user profile
-            Profile.objecs.create(user=new_user)
+            Profile.objects.create(user=new_user)
             return render(request, 'account/register_done.html',{'new_user':new_user})
     else:
         user_form = UserRegistrationForm()
-    return render(request, 'account/register.html',{'user_form':user_form})
+    return render(request, 'account/register.html',{'user_form': user_form})
 
 @login_required
 def edit(request):
@@ -59,4 +59,4 @@ def edit(request):
     else:
         user_form = UserEditForm(instance=request.user)
         profile_form = ProfileEditForm(instance=request.user.profile)
-    return render(request, 'account/edit.html',{'user_form':user_form,'profile_form':profile_form})
+    return render(request, 'account/edit.html',{'user_form': user_form,'profile_form': profile_form})
