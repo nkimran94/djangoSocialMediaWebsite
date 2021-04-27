@@ -141,3 +141,5 @@ AUTHENTICATION_BACKENDS =[
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
 ]
+SOCIAL_AUTH_FACEBOOK_KEY = '575108696739095' #Facebook app id
+SOCIAL_AUTH_FACEBOOK_SECRET = '7e76a301f800967ad507a63218ae98d3' #Facebook app secret
