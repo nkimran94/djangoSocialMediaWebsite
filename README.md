@@ -1,0 +1,2 @@
+# djangoSocialMediaWebsite
+In this web project, I have developed a social media application, which means that users are able to join an online platform and interact with each other by sharing content. There will be image sharing platform feature where users will be able to bookmark any image on the internet and share it with others. They will also be able to see activity on the platform from the users they follow and like/unlike the images shared by them.
